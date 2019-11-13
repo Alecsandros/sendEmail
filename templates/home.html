@@ -1,3 +1,19 @@
 {% load static %}
 
 <h1>Contato</h1>
+
+<form action="POST" style="display: flex; flex-direction: column; width: 400px;">
+	<label for="input-name">Nome</label>
+	<input type="text" name="name" id="input-name" required>
+
+	<label for="input-mail">Email</label>
+	<input type="email" name="mail" id="input-mail" required>
+
+	<label for="input-subect">Assunto</label>
+	<input type="text" name="subect" id="input-subect" required>
+
+	<label for="input-message">Mensagem</label>
+	<input type="textarea" name="message" id="input-message" required>
+
+	<input type="submit" value="enviar">
+</form>
